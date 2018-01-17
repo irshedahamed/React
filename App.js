@@ -6,12 +6,18 @@ import {
   Text,
   StyleSheet,
 } from 'react-native';
-import {Content, Card, CardItem, Body} from 'native-base';
-export default class AppBody extends Component {
+
+import AppHeader from './src/components/appHeader';
+import AppFooter from './src/components/appFooter';
+import AppBody from './src/components/appBody';
+
+export default class Project extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>I'm the AppBody component</Text>
+        <AppHeader/>
+        <AppBody/>
+        <AppFooter/>
       </View>
     );
   }
